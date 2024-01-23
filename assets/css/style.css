@@ -25,6 +25,7 @@ a {
 .header {
   min-height: 100vh;
   background-color: var(--header-bg);
+  padding-top: 30px;
 }
 
 .logo {
@@ -69,4 +70,37 @@ a {
 .logo__brand--small {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* header top */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 4px 21px;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  text-shadow: 1px 0 0 currentColor;
+}
+.navbar__link--active::before {
+  position: relative;
+  left: -8px;
+  top: -2px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
 }
